@@ -1,0 +1,295 @@
+District,AC. No.,Constituency,TMC+,BJP+,Left+,Congress+
+Cooch Behar,1,Mekliganj (SC),Paresh Chandra Adhikary,Dadhiram Roy,Kamal Roy,Ila Rani Roy
+,2,Mathabhanga (SC),Sablu Barman,Nisith Pramanik,Khagen Barman,Khitendra Nath Barman
+,3,Cooch Behar Uttar (SC),Partha Pratim Roy,Sukumar Roy,Pranay Karji,Partha Pratim Ishore
+,4,Cooch Behar Dakshin,Avijit Dey Bhowmik,Rathindra Nath Bose,Nazmul Alam Sarkar,Khokan Mian
+,5,Sitalkuchi (SC),Harihar Das,Savitri Barman,Nabadipti Adhikari,Sukamal Barman
+,6,Sitai (SC),Sangita Roy,Ashutosh Barma,Arun Kumar Barma,Rabin Roy
+,7,Dinhata,Udayan Guha,Ajay Roy,Bikash Mondal,Harihar Ray Singha
+,8,Natabari,Sailen Barman,Girija Shankar Roy,Akik Hassan,Biswajit Sarkar
+,9,Tufanganj,Shib Shankar Paul,Malati Rava Roy,Dhananjoy Rava,Debendra Nath Barma
+Alipurduar,10,Kumargram (ST),Rajeev Tirkey,Manoj Kumar Oraon,Kishore Minz,Sudham Lama
+,11,Kalchini (ST),Birendra Bara,Bishal Lama,Passang Sherpa,Anjan Chik Baraik
+,12,Alipurduars,Suman Kanjilal,Paritosh Das,Shyamal Roy,Mrinmoy Sarkar
+,13,Falakata (SC),Subhas Chandra Roy,Dipak Barman,Kamal Kishore Roy,Akshoy Kumar Barman
+,14,Madarihat (ST),Jay Prakash Toppo,Lakshman Limbu,Subhas Lohar,Joy Prafulla Lakra
+Jalpaiguri,15,Dhupguri (SC),Nirmal Chandra Roy,Naresh Chandra Roy,Niranjan Roy,Harish Chandra Roy
+,16,Maynaguri (SC),Rammohan Roy,Dalim Roy,Sudeb Roy,Jogen Sarkar
+,17,Jalpaiguri (SC),Krishna Das,Ananta Deb Adhikary,Debraj Barman,Sudipto Mohonto
+,18,Rajganj (SC),Swapna Barman,Dinesh Sarkar,Kharendranath Roy,Tushar Kanti Roy
+,19,Dabgram-Phulbari,Ranjan Shil Sharma,Shikha Chatterjee,Dilip Singh,Rohit Singh Sisodia
+,20,Mal (ST),Bulu Chik Baraik,Sukra Munda,Manu Oraon,Rakesh Kujur
+,21,Nagrakata (ST),Sanjay Kujur,Puna Bhengra,Dilkumar Oraon,Shinu Munda
+Kalimpong,22,Kalimpong,Ruden Sada Lepcha,Bharat Chhetri,Rita Thapa,Santa Kumar Pradhan
+Darjeeling,23,Darjeeling,Bijoy Kumar Rai,Noman Rai,,Madhap Rai
+,24,Kurseong,Amar Lama,Sonam Lama,Uttam Sharma,Saroj Kumar Khatri
+,25,Matigara-Naxalbari (SC),Shankar Malakar,Anandamoy Barman,Jharen Roy,Amitava Sarkar
+,26,Siliguri,Goutam Deb,Shankar Ghosh,Sharadindu Chakraborty,Aloke Dhara
+,27,Phansidewa (ST),Reena Toppo Ekka,Durga Murmu,Sumanti Ekka,Nabanita Tirkey
+Uttar Dinajpur,28,Chopra,Hamidul Rahaman,Shankar Adhikari,Makleswar Rahaman,Zakir Abedin
+,29,Islampur,Kanaia Lal Agarwal,Chitrajit Roy,Sami Khan,Guddi Riaz
+,30,Goalpokhar,Md. Ghulam Rabbani,Sarajit Biswas,Zamaluddin,Masood Md Naseem Ahsen
+,31,Chakulia,Minhajul Arfin Azad,Manoj Jain,Amjad Ali,Ali Imran Ramz (Victor)
+,32,Karandighi,Goutam Paul,Biraj Biswas,Haji Sahabuddin,Murshid Alam
+,33,Hemtabad (SC),Satyajit Barman,Haripada Barman,Tanushree Das,Anamika Roy
+,34,Kaliaganj (SC),Nitai Baishya,Utpal Maharaj,Hirubala Roy,Girdhari Pramanik
+,35,Raiganj,Krishna Kalyani,Kaushik Chowdhury,Jibananda Singha,Mohit Sengupta
+,36,Itahar,Mosaraf Hussen,Sabita Barman,Utpal Das,Amal Acharjee
+Dakshin Dinajpur,37,Kushmandi (SC),Rekha Roy,Tapas Chandra Roy,Jyotirmoy Roy,Bablu Sarkar
+,38,Kumarganj,Toraf Hossain Mandal,Suvendu Sarkar,Mofazzal Hossain,Gulam Martuja Mandal
+,39,Balurghat,Arpita Ghosh,Bidyut Roy,Arnab Choudhury,Pradip Kumar Mitra
+,40,Tapan (ST),Chintamoni Biha,Budhrai Tudu,Bappai Haro,Bankim Chandra Toppo
+,41,Gangarampur (SC),Goutam Das,Satyendra Nath Ray,Biplab Barman,Jui Barman
+,42,Harirampur,Biplab Mitra,Debabrata Majumder,Gautam Goswami,Subhasish Pal
+Malda,43,Habibpur (ST),Amal Kisku,Joyel Murmu,Basudeb Barman,Rajen Soren
+,44,Gazole (SC),Prasenjit Das,Chinmoy Deb Barman,Khitish Sarkar,Prem Chowdhury
+,45,Chanchal,Prasun Banerjee,Ratan Das,Anawarul Haque,Asif Mehbub
+,46,Harishchandrapur,Md. Matibur Rahaman,Ratan Das,Sheikh Khalil,Mostaque Alam
+,47,Malatipur,Abdur Rahim Boxi,Ashish Das,Minarul Hossain,Mausam Noor
+,48,Ratua,Samar Mukherjee,Abhishek Singhania,Jahur Alam,Mottakin Alam
+,49,Manikchak,Kabita Mandal,Gour Chandra Mondal,Debojyoti Sinha,Md. Ansarul Hoque
+,50,Maldaha (SC),Lipika Barman Ghosh,Gopal Chandra Saha,Dipak Barman,Bhupendra Nath Halder
+,51,English Bazar,Ashish Kundu,Amlan Bhaduri,Ambar Mitra,Masud Alam
+,52,Mothabari,Md. Najrul Islam,Nibaran Ghosh,Moulana Shajahan Ali,Sayem Chowdhury
+,53,Sujapur,Sabina Yeasmin,Abhijit Rajak[c],Md. Karimullah Haque,Md. Abdul Hannan
+,54,Baisnabnagar,Chandana Sarkar,Raju Karmakar,Dundubhi Saha,Mamuni Mandal
+Murshidabad,55,Farakka,Amirul Islam,Sunil Chowdhury,Mojaffar Hossain,Md. Mahtab Sheikh
+,56,Samserganj,Nur Alam,Shashthi Charan Ghosh,Mohammad Odud Hassan,Nazme Alam
+,57,Suti,Emani Biswas,Mahabir Ghosh,A.K.M. Hasanuzzaman,Alfazuddin Biswas
+,58,Jangipur,Jakir Hossain,Chitto Mukherjee,Alok Kumar Das,Mohammad Imran Ali
+,59,Raghunathganj,Akhruzzaman,Surajit Poddar,Abul Hasnat,Nasir Sheikh
+,60,Sagardighi,Bayron Biswas,Tapas Chakraborty,Masiur Rahaman[d],Manoj Chakraborty
+,61,Lalgola,Dr. Abdul Aziz,Amar Kumar Das,Md. Babluzzaman,Md. Touhidur Rahaman
+,62,Bhagabangola,Reyat Hossain Sarkar,Bhaskar Sarkar,Mahmudal Hassan,Anju Begum
+,63,Raninagar,Abdul Soumik Hossain,Rana Pratap Singha Roy,Jamal Hossain,Zulfikur Ali
+,64,Murshidabad,Shaoni Singha Roy,Gouri Shankar Ghosh,Abdul Mannan,Siddiqui Ali
+,65,Nabagram (SC),Pranab Chandra Das,Dilip Saha,Purnima Das,Hiru Haldar
+,66,Khargram (SC),Ashish Marjit,Mitali Mal,Dhrubajyoti Saha,Mandar Kanti Mandal
+,67,Burwan (SC),Pratima Rajak,Sukhen Kumar Bagdi,Ananda Das,Sujit Das
+,68,Kandi,Apurba Sarkar,Gargi Das Ghosh,Rejaul Karim,Shamim Rana
+,69,Bharatpur,Mustafizur Rahaman,Anamika Ghosh,Naofel Md Shafiullah,Md. Azharudddin
+,70,Rejinagar,Ataur Rahman,Bapan Ghosh,Tushar Kanti Chatterjee,Jillu Sheikh
+,71,Beldanga,Rabiul Alam Chowdhury,Bharat Kumar Jhawar,Rajesh Ghosh,Md. Saharuddin Sheikh
+,72,Baharampur,Naru Gopal Mukherjee,Subrata Maitra,Abul Kasem Sk.,Adhir Ranjan Chowdhury
+,73,Hariharpara,Niamot Sheikh,Tanmoy Biswas,Zamiruddin Molla,Mousumi Begum
+,74,Naoda,Sahina Mumtaz Begum,Rana Mondal,Habibur Rahaman Mondal,Moshiur Rahman
+,75,Domkal,Humayun Kabir,Nanda Dulal Pal,Mostafizur Rahaman,Shehnaz Begum
+,76,Jalangi,Babar Ali,Naba Kumar Sarkar,Yunus Ali Sarkar,Abdul Rezzak Molla
+Nadia,77,Karimpur,Soham Chakraborty,Samarendranath Ghosh,Pravas Majumder,Pooja Roy Chowdhury
+,78,Tehatta,Dilip Poddar,Subrata Kabiraj,Subodh Biswas,Jyotirmoy Sarkar
+,79,Palashipara,Rukbanur Rahman,Anima Dutta,Samshur Ali Mallick,Hamidul Haque
+,80,Kaliganj,Alifa Ahmed,Bapan Ghosh,Sabina Yasmin,Kabil Uddin Shaikh
+,81,Nakashipara,Kallol Khan,Shantanu Dey,Sukla Saha,Tahir Sk
+,82,Chapra,Jeber Sekh,Saikat Sarkar,Jakir Mondal,Asif Khan
+,83,Krishnanagar Uttar,Somnath Dutta,Taraknath Chatterjee,Adwaita Biswas,Arghya Gon
+,84,Nabadwip,Pundarikakshya Saha,Shruti Shekhar Goswami,Swarnendu Sinha,Samir Saha
+,85,Krishnanagar Dakshin,Ujjal Biswas,Sadhan Ghosh,Laboni Jangi,Abdur Rahim Shaikh
+,86,Santipur,Braja Kishore Goswami,Swapan Das,Soumen Mahato,Alok Chatterjee
+,87,Ranaghat Uttar Paschim,Tapas Ghosh,Parthasarathi Chatterjee,Debashis Chakraborty,Naba Kumar Mondal
+,88,Krishnaganj (SC),Samir Kumar Poddar,Sukanta Biswas,Archana Biswas,Sankar Kumar Sarkar
+,89,Ranaghat Uttar Purba (SC),Barnali Dey Roy,Ashim Biswas,Mrinal Biswas,Nitya Gopal Mondal
+,90,Ranaghat Dakshin (SC),Sougata Kumar Burman,Ashim Kumar Biswas,Arindram Biswas,Rita Pal Das
+,91,Chakdaha,Subhankar Singha,Bankim Chandra Ghosh,Narayan Dasgupta,Malay Saha
+,92,Kalyani (SC),Atindra Nath Mondal,Anupam Biswas,Sabuj Das,Asimananda Majumder
+,93,Haringhata (SC),Rajib Biswas,Ashim Kumar Sarkar,Swapan Sarkar,Himanti Das
+North 24 Parganas,94,Bagdah (SC),Madhuparna Thakur,Soma Thakur,Gour Biswas,Prabir Kirtania
+,95,Bangaon Uttar (SC),Biswajit Das,Ashok Kirtania,Pijush Saha,Nilanjan Saha
+,96,Bangaon Dakshin (SC),Rituparna Addhya,Swapan Majumder,Asish Sarkar,Kishor Biswas
+,97,Gaighata (SC),Narottam Biswas,Subrata Thakur,Sajal Biswas,Anil Kumar Pandey
+,98,Swarupnagar (SC),Bina Mondal,Tarak Saha,Biswajit Mondal,Ritesh Mondal
+,99,Baduria,Burhanul Mokaddin,Sukriti Sarkar,Md. Qutubuddin Fatehi,Abdur Rahim Quazi
+,100,Habra,Jyotipriya Mallick,Debdas Mondal,Rijinandan Biswas,Pranab Bhattacharya
+,101,Ashoknagar,Narayan Goswami,Somoy Hira,Tapas Banerjee,Angshuman Roy
+,102,Amdanga,Pirzada Kasem Siddiqui,Arindam Dey,Biswajit Maity,Gopal Ghosh
+,103,Bijpur,Subodh Adhikary,Sudipta Das,Debasish Rakshit,Sibabrata Guha Roy
+,104,Naihati,Sanat Dey,Sumitro Chatterjee,Debojyoti Majumder,Pradip Kumar Kundu
+,105,Bhatpara,Amit Gupta,Pawan Singh,Aasnarayan Singh,Dharmendra Shaw
+,106,Jagatdal,Somenath Shyam Ichini,Rajesh Kumar,Parvej Ahmad Khan,Mandira Chakraborty
+,107,Noapara,Trinankur Bhattacharya,Arjun Singh,Gargi Chatterjee,Ashok Bhattacharya
+,108,Barrackpore,Raj Chakraborty,Koustav Bagchi,Suman Bandyopadhyay,Sambhu Das
+,109,Khardaha,Devdeep Purohit,Kalyan Chakraborty,Debojyoti Das,Joydev Ghosh
+,110,Dum Dum Uttar,Chandrima Bhattacharya,Sourav Sikdar,Dipsita Dhar,Dhananjoy Moitra
+,111,Panihati,Tirthankar Ghosh,Ratna Debnath,Kalatan Dasgupta,Subhashis Bhattacharya
+,112,Kamarhati,Madan Mitra,Arup Choudhury,Manash Mukherjee,Kallol Mukherjee
+,113,Baranagar,Sayantika Banerjee,Sajal Ghosh,Sayandip Mitra,Kalyani Chakraborty
+,114,Dum Dum,Bratya Basu,Arijit Bakshi,Mayukh Biswas,Susmita Biswas
+,115,Rajarhat New Town,Tapash Chatterjee,Piyush Kanodia,Saptarshi Deb,Sheikh Nijamuddin
+,116,Bidhannagar,Sujit Bose,Sharadwat Mukhopadhyay,Soumyajit Raha,Ranajit Mukherjee
+,117,Rajarhat Gopalpur,Aditi Munshi,Tarunjyoti Tiwari,Subhajit Dasgupta,Partha Bhaumik
+,118,Madhyamgram,Rathin Ghosh,Anindya Banerjee,Priyanka Barman,Ananta Roy
+,119,Barasat,Sabyasachi Dutta,Shankar Chatterjee,Hemanta Das,Tarak Mukherjee
+,120,Deganga,Anisur Rahaman Bidesh,Tarun Kanti Ghosh,Md. Mafidul Haque Sahaji,Miaraj Baidya
+,121,Haroa,Md. Mufti Abdul Matin,Bhaskar Mondal,Piyarul Islam,Md. Rabiul Molla
+,122,Minakhan (SC),Usha Rani Mondal,Rudrendra Patra,Pratik Mondal,Sunayana Biswas
+,123,Sandeshkhali (ST),Jharna Sardar,Sanat Sardar,Rabindra Nath Mahato,Judhisthir Bhumiji
+,124,Basirhat Dakshin,Surajit Mitra,Suraj Banerjee,Ainul Arefin,Abu Ishak Gazi
+,125,Basirhat Uttar,Md. Tauseef Rehman,Kaushik Siddharth,Md. Mucha Karimullah,Musa Haque Mondal
+,126,Hingalganj (SC),Ananda Sarkar,Rekha Patra,Nirmal Kumar Biswas,Biswajit Roy
+South 24 Parganas,127,Gosaba (SC),Subrata Mondal,Bikarno Naskar,Aditya Jotdar,Bhupal Chandra Das
+,128,Basanti (SC),Nilima Bishal Mistry,Bikash Sardar,Asit Roy,Gopinath Naiya
+,129,Kultali (SC),Ganesh Chandra Mondal,Madhabi Mahalder,Ram Sankar Halder,Rupa Halder
+,130,Patharpratima,Samir Kumar Jana,Asit Kumar Halder,Satya Ranjan Das,Subhrangshu Nayek
+,131,Kakdwip,Manturam Pakhira,Dipankar Jana,Narayan Das,Nasiruddin Ahamed
+,132,Sagar,Bankim Chandra Hazra,Sumanta Mondal,Swapan Singha,Prasanta Khutia
+,133,Kulpi,Barnali Dhara,Abani Naskar,Abdul Malek Mollah,Kutub Uddin Molla
+,134,Raidighi,Tapas Mondal,Palash Rana,Samya Ganguly,Ashish Kumar Mandal
+,135,Mandirbazar (SC),Joydeb Halder,Mallika Paik,Ashok Kumar Gayen,Chand Sardar
+,136,Jaynagar (SC),Biswanath Das,Alok Halder,Apurba Pramanik,Tapas Baidya
+,137,Baruipur Purba (SC),Bivas Sardar,Tumpa Sardar,Swapan Naskar,Pratap Chandra Mondal
+,138,Canning Paschim (SC),Paresh Ram Das,Prashanta Bayen,Prabir Mondal,Haran Chandra Mistry
+,139,Canning Purba,Md. Baharul Islam,Ashim Sapui,Arabul Islam,Sabir Ali Sardar
+,140,Baruipur Paschim,Biman Banerjee,Biswajit Paul,Lahek Ali,Asitlal Nag
+,141,Magrahat Purba (SC),Sharmistha Purkait,Uttam Kumar Banik,Chandan Saha,Atanu Halder
+,142,Magrahat Paschim,Shamim Ahmed,Gour Sundar Ghosh,Abdul Ajij al Hasan,Abdul Majid Halder
+,143,Diamond Harbour,Pannalal Halder,Dipak Kumar Halder,Samarendra Nath Naiya,Goutam Bhattacharya
+,144,Falta,Jahangir Khan,Debangshu Panda,Sambhu Kurmi,Abdur Rajjak Molla
+,145,Satgachhia,Somashree Betal,Agniswar Naskar,Gautam Pal,Pravash Ghosh
+,146,Bishnupur (SC),Dilip Mondal,Abhijit Sardar,Shyamal Dal,Arghya Naskar
+,147,Sonarpur Dakshin,Arundhuti Maitra,Roopa Ganguly,Paramita Dasgupta,Subrata Datta
+,148,Bhangar,Saokat Molla,Jayanta Gayen,Naushad Siddiqui,Mahabubul Islam
+,149,Kasba,Javed Ahmed Khan,Sandeep Banerjee,Dipu Das,Md. Hasim Zeshan Ahmad
+,150,Jadavpur,Debabrata Majumdar,Sarbori Mukherjee,Bikash Ranjan Bhattacharya,Shyamali Mandal
+,151,Sonarpur Uttar,Firdousi Begum,Debashish Dhar,Monalisa Sinha,Jagannath Kumir
+,152,Tollygunge,Aroop Biswas,Papiya Adhikari,Partha Pratim Biswas,Manas Sinha Roy
+,153,Behala Purba,Subhasish Chakraborty,Shankar Sikdar,Niloy Majumder,Abhijit Raha
+,154,Behala Paschim,Ratna Chatterjee,Indranil Khan,Nihar Bhakta,Saibal Roy
+,155,Maheshtala,Subhasis Das,Tamanath Bhowmik,Sayan Banerjee,Haji Abdul Hannan
+,156,Budge Budge,Ashok Kumar Deb,Tarun Kumar Adak,Kajol Dutta Ghosh,Mujibar Rahaman Kayal
+,157,Metiaburuz,Abdul Khaleque Molla,Veer Bahadur Singh,Monirul Islam,Md. Mukhtar
+Kolkata,158,Kolkata Port,Firhad Hakim,Rakesh Singh,Faiyaz Khan,Aquib Gulzar
+,159,Bhabanipur,Mamata Banerjee,Suvendu Adhikari,Shrijeeb Biswas,Pradip Prasad
+,160,Rashbehari,Debasish Kumar,Swapan Dasgupta,Manas Ghosh,Ashutosh Chatterjee
+,161,Ballygunge,Sovandeb Chattopadhyay,Shatarupa,Afrin Begum,Rohan Mitra
+,162,Chowrangee,Nayna Bandopadhyay,Santosh Pathak,Sanjoy Basu[e],Manash Sarkar
+,163,Entally,Sandipan Saha,Priyanka Tibrewal,Abdur Rouf,Kashif Reza
+,164,Beleghata,Kunal Ghosh,Partha Choudhary,Paramita Roy,Shahina Javed
+,165,Jorasanko,Vijay Upadhayay,Vijay Ojha,Bharat Ram Tiwari,Deepak Singh
+,166,Shyampukur,Sashi Panja,Poornima Chakraborty,Jhuma Das,Purna Ghosh
+,167,Maniktala,Shreya Pandey,Tapas Roy,Mousumi Ghosh,Suman Roy Chowdhury
+,168,Kashipur–Belgachhia,Atin Ghosh,Ritesh Tiwari,Rajinder Gupta,Tarak Pal
+Howrah,169,Bally,Kailash Mishra,Sanjay Singh,Sankar Moitra,Priyanka Choudhury
+,170,Howrah Uttar,Goutam Chowdhuri,Umesh Rai,Gautam Roy,Om Prakash Jaiswal
+,171,Howrah Madhya,Arup Roy,Biplab Mondal,Imteaz Ahmed,Aparna Bose
+,172,Shibpur,Rana Chatterjee,Rudranil Ghosh,Jagannath Bhattacharya,Shrabanti Singh
+,173,Howrah Dakshin,Nandita Chowdhury,Shyamal Hati,Abhijit Bandyopadhyay,Deepsikha Bhowmick
+,174,Sankrail (SC),Priya Paul,Barnali Dhali,Samir Malick,Bechu Ram Malik
+,175,Panchla,Gulsan Mullick,Ranjan Kumar Paul,Farid Molla,Rahul Pandey
+,176,Uluberia Purba,Ritabrata Banerjee,Rudra Prasad Banerjee,Ansar Ali Sheikh,Alam Deiyan Sheikh
+,177,Uluberia Uttar (SC),Bimal Kumar Das,Chiran Bera,Ashok Dolui,Kalyani Haldar
+,178,Uluberia Dakshin,Pulak Roy,Mangalanand Puri Maharaj,Amirul Islam Khan,Intaz Ali Shah
+,179,Shyampur,Nadebasi Jana,Hiran Chatterjee,Asit Baran Sau,Sheikh Manjur Alam
+,180,Bagnan,Arunava Sen,Premangshu Rana,Bhaskar Roy,Sheikh Hafizur Rahaman
+,181,Amta,Sukanta Kumar Paul,Amit Samanta,Joshimuddin Mallick,Tapan Das
+,182,Udaynarayanpur,Samir Kumar Panja,Prabhakar Pandit,Shasthi Maji,Asit Bakuly
+,183,Jagatballavpur,Subir Chatterjee,Anupam Ghosh,Nazira Khatoon,Koushik Roy
+,184,Domjur,Tapas Maity,Gobinda Hazra,Dulu Das,Aloke Koley
+Hooghly,185,Uttarpara,Sirsanya Banerjee,Dipanjan Chakraborty,Minakshi Mukherjee,Subrata Mukherjee
+,186,Sreerampur,Tanmay Ghosh,Bhaskar Bhattacharya,Nabanita Chakraborty,Subhankar Sarkar
+,187,Champdani,Arindam Guin,Dilip Singh,Chandranath Banerjee,Pritam Ghosh
+,188,Singur,Becharam Manna,Arup Kumar Das,Debasish Chatterjee,Barun Kumar Malik
+,189,Chandannagar,Indranil Sen,Dipanjan Guha,Manish Panda,Ratan Kumar Goldar
+,190,Chunchura,Debangshu Bhattacharya,Subir Nag,Sunil Saha,Moinul Haque
+,191,Balagarh (SC),Ranjan Dhara,Sumana Sarkar,Bikash Goldar,Ashok Biswas
+,192,Pandua,Samir Chakraborty,Tushar Kumar Majumdar,Amjad Hossain,Sanatan Mandi
+,193,Saptagram,Bidesh Ranjan Bose,Swaraj Ghosh,Anirban Sarkar,Sougata Ghosh
+,194,Chanditala,Swati Khandoker,Debasish Mukherjee,Sheikh Asif Ali,Sheikh Abu Abbasuddin
+,195,Jangipara,Snehasish Chakraborty,Prasenjit Bag,Sudipto Sarkar,Subhashis Datta
+,196,Haripal,Karabi Manna,Madhumita Ghosh,Sheikh Muzaffar Ali,Saif Azad
+,197,Dhanekhali (SC),Ashima Patra,Barnali Das,Ruma Aheri,Jyoti Kumari Das
+,198,Tarakeswar,Ramendu Sinharay,Santu Pan,Abesh Khamrui,Bhabani Prasad Mondal
+,199,Pursurah,Partha Hazari,Biman Ghosh,Sandip Kumar Samanta,Sheikh Habibur Rahaman
+,200,Arambagh (SC),Mita Bag,Hemanta Bag,Bithika Pandit,Sushil Kumar Santra
+,201,Goghat (SC),Nirmal Maji,Prashanta Digar,Muktaram Dhaure,Haradhan Santra
+,202,Khanakul,Palash Roy,Susanta Ghosh,Sheikh Saddam Hossein,Pradip Kumar Kar
+Purba Medinipur,203,Tamluk,Dipendra Narayan Roy,Hari Krishna Bera,Nabendu Ghara,Haradhan Mazumder
+,204,Panskura Purba,Asim Kumar Maji,Subrata Maity,Sheikh Ibrahim Ali,Dipak Patra
+,205,Panskura Paschim,Siraj Khan,Sintu Senapati,Afjal Ali Shah,Kalyan Roy
+,206,Moyna,Chandan Mondal,Ashok Dinda,Swapan Barman,Nimai Barman
+,207,Nandakumar,Sukumar Dey,Nirmal Khanra,Chandan Maity,Sheikh Matin
+,208,Mahisadal,Tilak Chakraborty,Subhash Panja,Paritosh Patnayak,Kajal Nayek Das
+,209,Haldia (SC),Tapasi Mondal,Pradip Kumar Bijoli,Ashok Patra,Abhimanyu Mandal
+,210,Nandigram,Pabitra Kar,Suvendu Adhikari,Md. Sabe Miraj Ali Khan,Sheikh Jariatul Hossain
+,211,Chandipur,Uttam Barik,Piyush Kanti Das,Rita Das,Sheikh Taslim Ahmed
+,212,Patashpur,Pijush Kanti Panda,Tapan Maity,Saikat Giri,Pranab Kumar Mahapatra
+,213,Kanthi Uttar,Debasis Bhunia,Sumita Sinha,Sutanu Maity,Subrata Mahapatra
+,214,Bhagabanpur,Manab Kumar Porua,Shantanu Pramanik,Pratibha Rani Kar Sasamal,Biswajit Panigrahi
+,215,Khejuri (SC),Rabin Chandra Mandal,Subrata Paik,Himangshu Das,Asit Pramanik
+,216,Kanthi Dakshin,Tarun Kumar Jana,Arup Kumar Das,Teheran Hossain,Sheikh Masud Malik
+,217,Ramnagar,Akhil Giri,Chandra Shekhar Mondal,Ashoke Kumar Maity,Manas Kumar Dutta
+,218,Egra,Tarun Maity,Dibyendu Adhikari,Subrata Panda,Anjan Kumar Pattnayak
+Paschim Medinipur,219,Dantan,Manik Maity,Ajit Kumar Jana,Shyamalkanti Das Pattanayek,Utpal Dutta
+Jhargram,220,Nayagram (ST),Dulal Murmu,Amiya Kisku,Pulin Bihari Baske,Prasanta Murmu
+,221,Gopiballavpur,Ajit Mahata,Rajesh Mahato,Bikash Sarangi,Sourav Ghosh
+,222,Jhargram,Mangal Saren,Lakshmikant Sahu,Arjun Mahato,Prasenjit Dey
+Paschim Medinipur,223,Keshiary (ST),Ramjiban Mandi,Bhadra Hembram,Malina Murmu,Kaluchand Tudu
+,224,Kharagpur Sadar,Pradip Sarkar,Dilip Ghosh,Madhusudan Roy,Papiya Chakraborty
+,225,Narayangarh,Pratibha Rani Maity,Rama Prasad Giri,Tapas Sinha,Sheikh Alam Hossain
+,226,Sabang,Manas Bhunia,Amal Panda,Nakul Chandra Bera,Aloke Kumar Samui
+,227,Pingla,Ajit Maity,Swagata Manna,Ashoke Sen,Sushanta Mandal
+,228,Kharagpur,Dinen Roy,Tapan Bhuiya,Sheikh Shahjahan Ali,Ujjal Mukherjee
+,229,Debra,Rajib Banerjee,Subhashish Om,Sumit Adhikary,Chittaranjan Jana
+,230,Daspur,Ashish Hudait,Tapan Dutta,Ranjit Pal,Kousik Goswami
+,231,Ghatal (SC),Shyamali Sardar,Shital Kapat,Shantinath Satik,Kaberi Dolui
+,232,Chandrakona (SC),Surjya Kanta Dolui,Sukanta Dolui,Suparna Dolui,Manika Middya
+,233,Garbeta,Uttara Singha,Pradeep Lodha,Tapan Ghosh,Siddhartha Bishoyee
+,234,Salboni,Srikanta Mahata,Biman Mahato,Mohan Tudu,Arup Mukherjee
+,235,Keshpur (SC),Seuli Saha,Suvendu Samanta,Gurupada Mondal,Kamal Kishore Khanna
+,236,Medinipur,Sujoy Hazra,Shankar Guchhait,Monikuntal Khamrui,Sambhunath Chattopadhyay
+Jhargram,237,Binpur (ST),Birbaha Hansda,Pranat Tudu,Rabi Sing Sardar,Golapi Soren
+Purulia,238,Bandwan (ST),Rajib Lochan Saren,Labsen Baskey,Rathu Singh Sardar,Siten Mandi
+,239,Balarampur,Shantiram Mahato,Jaladhar Mahato,Namita Mahato,Sukanta Mahato
+,240,Baghmundi,Sushanta Mahato,Rahidas Mahato,Parimal Kumar,Nepal Chandra Mahato
+,241,Joypur,Arjun Mahato,Biswajit Mahato[f],Dhirendra Nath Mahato,Phani Bhushan Kumar
+,242,Purulia,Sujoy Banerjee,Sudip Kumar Mukherjee,Sayantan Ghosh,Dibyajyoti Prasad Singh Deo
+,243,Manbazar (ST),Sandhya Rani Tudu,Moyna Murmu,Sonamoni Tudu,Sombari Mahali
+,244,Kashipur,Soumen Beltharia,Kamalakanta Hansda,Sulekha Bauri,Subhas Mahato
+,245,Para (SC),Manik Bauri,Nadiar Chand Bouri,Aloke Bauri,Phalguni Bauri
+,246,Raghunathpur (SC),Hazari Bauri,Mamoni Bauri,Ganesh Bauri,Sandhya Bauri
+Bankura,247,Saltora (SC),Uttam Bauri,Chandana Bauri,Nandalal Bauri,Amar Kanti Mandal
+,248,Chhatna,Swapan Kumar Mandal,Satyanarayan Mukhopadhyay,Rajib Kar,Partha Pratim Bose
+,249,Ranibandh (ST),Tanushree Hansda,Kshudiram Tudu,Deblina Hembram,Gurupada Sardar
+,250,Raipur (ST),Thakur Moni Soren,Kshetra Mohan Hansda,Ram Mandi,Subhra Hembram Murmu
+,251,Taldangra,Falguni Singhababu,Souvik Patra,Debkanti Mohanti,Nayan Das Chakraborty
+,252,Bankura,Anup Mondal,Niladri Sekhar Dana,Abhayananda Mukherjee,Arup Banerjee
+,253,Barjora,Gautam Mishra,Billeshwar Singha,Sujit Chakraborty,Vivekananda Keora
+,254,Onda,Subrata Dutta,Amarnath Shakha,Asit Sharma,Paban Salampuria
+,255,Bishnupur,Tanmay Ghosh,Shukla Chatterjee,Titas Gupta,Ujjal Chandra
+,256,Katulpur (SC),Harakali Protiher,Lakshmikanta Majumdar,Ramchandra Roy,Sumitra Mallick Santra
+,257,Indas (SC),Shyamali Roy Bagdi,Nirmal Kumar Dhara,Mona Mallick,Mou Mandal Samanta
+,258,Sonamukhi (SC),Kallol Saha,Dibakar Gharami,Ajit Roy,Rahul Bauri
+Purba Bardhaman,259,Khandaghosh (SC),Nabin Chandra Bag,Gautam Dhara,Ramjiban Roy,Arup Kumar Saha
+,260,Bardhaman Dakshin,Khokan Das,Moumita Biswas,Sudipta Gupta,Gourab Samaddar
+,261,Raina (SC),Mandira Dalui,Subhash Patra,Somnath Majhi,Pampa Malik
+,262,Jamalpur (SC),Bhootnath Mallick,Arun Halder,Samar Hazra[g],Rajib Saha
+,263,Monteswar,Siddiqullah Chowdhury,Saikat Panja,Anupam Ghosh,Jyotirmoy Mondal
+,264,Kalna (SC),Deboprasad Bag,Siddharth Majumdar,Sarmistha Nag Saha,Amal Kumar Saha
+,265,Memari,Rasbihari Halder,Manav Guha,Krishanu Bhadra,Prabir Ganguly
+,266,Bardhaman Uttar (SC),Nisith Kumar Malik,Sanjay Das,Mamoni Mondal Roy,Sandip Das
+,267,Bhatar,Shantanu Koner,Soumen Karfa,Hasina Khatoon,Dhurjati Bijoy Maji
+,268,Purbasthali Dakshin,Swapan Debnath,Prankrishna Tapadar,Ziadul Sekh,Rabindranath Mondal
+,269,Purbasthali Uttar,Vasundhara Goswami,Gopal Chattopadhyay,Pradip Saha,Amitava Bhattacharya
+,270,Katwa,Rabindranath Chatterjee,Krishna Ghosh,Sanjib Das,Ranajit Chatterjee
+,271,Ketugram,Sekh Sahonawez,Anadi Ghosh,Qari Jakir Hossain,Sk Abu Bakkar
+,272,Mangalkot,Apurba Chowdhury,Shishir Ghosh,Miraj Alam,Jagadish Dutta
+,273,Ausgram (SC),Shyama Prasanna Lohar,Kalita Maji,Chanchal Majhi,Tapas Baral
+,274,Galsi (SC),Alok Kumar Majhi,Raju Patra,Monimala Das,Debasish Biswas
+Paschim Bardhaman,275,Pandabeswar,Narendranath Chakraborty,Jitendra Tiwari,Prabir Mondal,Uttam Kumar Roy
+,276,Durgapur Purba,Pradip Mazumdar,Chandra Shekhar Banerjee,Simanta Chatterjee,Debesh Chakraborty
+,277,Durgapur Paschim,Kavi Dutta,Lakshman Chandra Ghorui,Pravas Sain,Tarun Roy
+,278,Raniganj,Kalobaran Mondal,Partho Ghosh,Naran Bauri,Faiz Ahmed
+,279,Jamuria,Hareram Singh,Bijan Mukherjee,Md. Sabbir Hussain,Tarun Kumar Ganguly
+,280,Asansol Dakshin,Tapas Banerjee,Agnimitra Paul,Shilpi Chakraborty,Souvik Mukherjee
+,281,Asansol Uttar,Moloy Ghatak,Krishnendu Mukherjee,Akhilesh Kumar Singh,Prasenjit Puitandi
+,282,Kulti,Abhijit Ghatak,Ajay Kumar Poddar,Bhabani Acharya,Rabi Yadav
+,283,Barabani,Bidhan Upadhyay,Arijit Roy,Biswajit Bauri,Joydev Roy
+Birbhum,284,Dubrajpur (SC),Chandra Naresh Bauri,Anup Kumar Saha,Bijoy Bagdi,Sanjoy Byapari
+,285,Suri,Ujjal Chatterjee,Jagannath Chattopadhyay,Motiur Rahaman,Sanjoy Adhikary
+,286,Bolpur,Chandranath Sinha,Dilip Kumar Ghosh,Bapi Soren,Rathin Sen
+,287,Nanoor (SC),Bidhan Chandra Majhi,Khokan Das,Shyamali Pradhan,Abhay Das
+,288,Labpur,Abhijit Sinha,Debasish Ojha,Mansa Hansda,Ratna Sen
+,289,Sainthia (SC),Nilabati Saha,Krishna Kant Saha,Debu Chunari,Archana Ankur
+,290,Mayureswar,Abhijit Roy,Dudh Kumar Mondal,Jayanta Bhalla,Syed Kasafoddoza
+,291,Rampurhat,Ashish Banerjee,Dhruba Saha,Sanjib Mallick,Vivekananda Shaw
+,292,Hansan,Fayezul Haque,Nikhil Banerjee,Kamal Hasan,Milton Rashid
+,293,Nalhati,Rajendra Prasad Singh,Anil Singh,Dipak Chatterjee,Abdul Karim
+,294,Murarai,Mosarraf Hossain,Rinki Ghosh,Md. Ali Reza Mandal,Sanjibur Rahaman
