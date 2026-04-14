@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WB Candidate Live Roster</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- React & ReactDOM -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    
+    <!-- Babel for in-browser JSX compiling -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body class="bg-gray-50">
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect, useMemo } = React;
+
+        const DEFAULT_CSV_DATA = `AC No.,Constituency,TMC Candidate,BJP Candidate
+1,Mekliganj (SC),Paresh Chandra Adhikary,Dadhiram Roy
+2,Mathabhanga (SC),Sablu Barman,Nisith Pramanik 🔥
+3,Coochbehar Uttar (SC),Partha Pratim Roy,Sukumar Roy
+4,Coochbehar Dakshin,Avijit De Bhowmick,Rathindranath Bose
+5,Sitalkuchi (SC),Harihar Das,Savitri Barman
+7,Dinhata,Udayan Guha,Ajay Roy
+9,Tufanganj,Shib Sankar Paul,Malati Rava Roy
+10,Kumargram (ST),Rajeev Tirkey,Manoj Kumar Oraon
+11,Kalchini (ST),Birendra Bara,Bishal Lama
+12,Alipurduar,Suman Kanjilal,Paritosh Das
+13,Falakata (SC),Subhash Chandra Roy,Deepak Barman
+14,Madarihat (ST),Jayprakash Toppo,Lakshman Limbu
+15,Dhupguri (SC),Dr Nirmal Chandra Roy,Naresh Chandra Roy
+16,Maynaguri (SC),Ram Mohan Roy,Kaushik Roy
+17,Jalpaiguri (SC),Krishna Das,Ananta Deb Adhikary
+19,Dabgram-Phulbari,Ranjan Shil Sharma,Shikha Chatterjee
+20,Mal (ST),Bulu Chik Baraik,Sukra Munda
+21,Nagrakata (ST),Sanjay Kujur,Puna Bhengra
+188,Singur,Becharam Manna,Arup Kumar Das
+189,Chandannagar,Indranil Sen,Dipanjan Kumar Guha
+190,Chunchura,Debangshu Bhattacharya 🔥,Subir Nag
+196,Haripal,Dr. Karabi Manna,Madhumita Ghosh
+203,Tamluk,Dipendra Narayan Roy,Hare Krishna Bera
+207,Nandakumar,Sukumar Dey,Nirmal Khanra
+210,Nandigram,Pabitra Kar,Suvendu Adhikari 🔥
+214,Bhagabanpur,Manab Kumar Porua,Santanu Pramanik
+215,Khejuri (SC),Rabin Chandra Mandal,Subrata Paik
+218,Egra,Tarun Maity,Dibendu Adhikari 🔥
+224,Kharagpur Sadar,Pradip Sarkar,Dilip Ghosh 🔥
+227,Pingla,Ajit Maity,Swagata Manna
+236,Medinipur,Sujoy Hazra,Shankar Guchait
+240,Baghmundi,Sushanta Mahato,Rahidas Mahato
+242,Purulia,Sujoy Banerjee,Sudip Kumar Mukherjee
+247,Saltora (SC),Uttam Bauri,Chandana Bauri
+252,Bankura,Dr. Anup Mondal,Niladri Shekhar Dana
+255,Bishnupur,Tanmoy Ghosh,Shukla Chatterjee
+259,Khandaghosh (SC),Nabin Chandra Bag,Gautam Dhara
+264,Kalna (SC),Deboprasad Bag,Goutam Pal`;
+
+        function parseCSV(text) {
+            if (!text) return [];
+            const rows = text.split(/\r?\n/).filter(row => row.trim() !== '');
+            if (rows.length === 0) return [];
+
+            const headers = rows[0].split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/).map(h => h.trim().replace(/^"|"$/g, ''));
+            
+            const data = rows.slice(1).map(row => {
+                const values = row.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);
+                const obj = {};
+                headers.forEach((h, i) => {
+                    let val = values[i] ? values[i].trim() : '';
+                    if (val.startsWith('"') && val.endsWith('"')) {
+                        val = val.slice(1, -1).replace(/""/g, '"');
+                    }
+                    obj[h] = val;
+                });
+                return obj;
+            });
+
+            return { headers, data };
+        }
+
+        function App() {
+            const [data, setData] = useState([]);
+            const [columns, setColumns] = useState([]);
+            const [loading, setLoading] = useState(true);
+            const [error, setError] = useState(null);
+            
+            const [searchTerm, setSearchTerm] = useState('');
+            const [sortConfig, setSortConfig] = useState({ key: null, direction: 'asc' });
+            
+            const [showSettings, setShowSettings] = useState(false);
+            const [sheetUrl, setSheetUrl] = useState(() => localStorage.getItem('googleSheetUrl') || '');
+
+            const fetchData = async (url) => {
+                setLoading(true);
+                setError(null);
+                try {
+                    if (url && url.startsWith('http')) {
+                        const response = await fetch(url);
+                        if (!response.ok) throw new Error('Failed to fetch from Google Sheets');
+                        const csvText = await response.text();
+                        const parsed = parseCSV(csvText);
+                        setData(parsed.data);
+                        setColumns(parsed.headers);
+                    } else {
+                        const parsed = parseCSV(DEFAULT_CSV_DATA);
+                        setData(parsed.data);
+                        setColumns(parsed.headers);
+                    }
+                } catch (err) {
+                    console.error(err);
+                    setError('Error loading live data. Showing offline sample data instead.');
+                    const parsed = parseCSV(DEFAULT_CSV_DATA);
+                    setData(parsed.data);
+                    setColumns(parsed.headers);
+                } finally {
+                    setLoading(false);
+                }
+            };
+
+            useEffect(() => {
+                fetchData(sheetUrl);
+            }, [sheetUrl]);
+
+            const handleSaveSettings = (e) => {
+                e.preventDefault();
+                localStorage.setItem('googleSheetUrl', sheetUrl);
+                setShowSettings(false);
+                fetchData(sheetUrl);
+            };
+
+            const handleSort = (key) => {
+                let direction = 'asc';
+                if (sortConfig.key === key && sortConfig.direction === 'asc') {
+                    direction = 'desc';
+                }
+                setSortConfig({ key, direction });
+            };
+
+            const sortedAndFilteredData = useMemo(() => {
+                let sortableItems = [...data];
+
+                if (searchTerm) {
+                    sortableItems = sortableItems.filter((item) =>
+                        Object.values(item).some(
+                            (val) => val && val.toString().toLowerCase().includes(searchTerm.toLowerCase())
+                        )
+                    );
+                }
+
+                if (sortConfig.key !== null) {
+                    sortableItems.sort((a, b) => {
+                        const aVal = a[sortConfig.key];
+                        const bVal = b[sortConfig.key];
+                        
+                        if (!isNaN(aVal) && !isNaN(bVal)) {
+                            return sortConfig.direction === 'asc' ? Number(aVal) - Number(bVal) : Number(bVal) - Number(aVal);
+                        }
+
+                        if (aVal < bVal) return sortConfig.direction === 'asc' ? -1 : 1;
+                        if (aVal > bVal) return sortConfig.direction === 'asc' ? 1 : -1;
+                        return 0;
+                    });
+                }
+
+                return sortableItems;
+            }, [data, sortConfig, searchTerm]);
+
+            const downloadCSV = () => {
+                if (data.length === 0) return;
+                const csvContent = "data:text/csv;charset=utf-8," 
+                    + columns.join(",") + "\n" 
+                    + sortedAndFilteredData.map(e => columns.map(c => `"${(e[c] || '').replace(/"/g, '""')}"`).join(",")).join("\n");
+                const encodedUri = encodeURI(csvContent);
+                const link = document.createElement("a");
+                link.setAttribute("href", encodedUri);
+                link.setAttribute("download", "Candidate_List.csv");
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            };
+
+            return (
+                <div className="min-h-screen text-gray-900 font-sans">
+                    {/* Navigation Header */}
+                    <nav className="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-20">
+                        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                            <div className="flex justify-between items-center h-16">
+                                <div className="flex items-center space-x-3">
+                                    <div className="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center shadow-lg">
+                                        <span className="text-white font-bold text-xl">WB</span>
+                                    </div>
+                                    <h1 className="text-xl font-bold text-gray-800 tracking-tight">Candidate Live Roster</h1>
+                                </div>
+                                <div className="flex items-center space-x-2 sm:space-x-4">
+                                    <button 
+                                        onClick={() => fetchData(sheetUrl)}
+                                        className="w-10 h-10 flex items-center justify-center text-gray-500 hover:text-indigo-600 hover:bg-indigo-50 rounded-full transition-colors"
+                                        title="Refresh Data"
+                                    >
+                                        <i className={`fa-solid fa-rotate ${loading ? "fa-spin" : ""}`}></i>
+                                    </button>
+                                    <button 
+                                        onClick={() => setShowSettings(true)}
+                                        className="flex items-center space-x-2 px-3 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-md transition-colors font-medium text-sm"
+                                    >
+                                        <i className="fa-solid fa-gear"></i>
+                                        <span className="hidden sm:inline">Admin Link</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                        
+                        {/* Error Banner */}
+                        {error && (
+                            <div className="mb-6 p-4 rounded-md bg-yellow-50 border border-yellow-200 flex items-start space-x-3 text-yellow-800">
+                                <i className="fa-solid fa-circle-exclamation mt-1"></i>
+                                <div>
+                                    <p className="font-semibold text-sm">Connection Note</p>
+                                    <p className="text-sm mt-1">{error}</p>
+                                </div>
+                            </div>
+                        )}
+
+                        {/* Toolbar: Search and Export */}
+                        <div className="flex flex-col sm:flex-row justify-between items-center mb-6 space-y-4 sm:space-y-0">
+                            <div className="relative w-full sm:w-96 shadow-sm rounded-md">
+                                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                    <i className="fa-solid fa-magnifying-glass text-gray-400"></i>
+                                </div>
+                                <input
+                                    type="text"
+                                    placeholder="Search by name, constituency, AC number..."
+                                    className="block w-full pl-10 pr-3 py-2.5 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm transition-shadow outline-none"
+                                    value={searchTerm}
+                                    onChange={(e) => setSearchTerm(e.target.value)}
+                                />
+                            </div>
+                            
+                            <div className="flex items-center space-x-3 w-full sm:w-auto">
+                                <span className="text-sm text-gray-500 hidden sm:inline">
+                                    {sortedAndFilteredData.length} records found
+                                </span>
+                                <button
+                                    onClick={downloadCSV}
+                                    className="flex-1 sm:flex-none flex items-center justify-center space-x-2 px-4 py-2.5 border border-gray-300 bg-white shadow-sm text-sm font-medium rounded-lg text-gray-700 hover:bg-gray-50 transition-colors"
+                                >
+                                    <i className="fa-solid fa-download"></i>
+                                    <span>Export CSV</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        {/* Table Container */}
+                        <div className="bg-white rounded-xl shadow border border-gray-200 overflow-hidden relative">
+                            {loading && (
+                                <div className="absolute inset-0 bg-white/60 backdrop-blur-sm z-10 flex items-center justify-center">
+                                    <div className="flex flex-col items-center space-y-2">
+                                        <i className="fa-solid fa-rotate fa-spin text-3xl text-indigo-600"></i>
+                                        <p className="text-indigo-800 font-medium">Syncing Data...</p>
+                                    </div>
+                                </div>
+                            )}
+
+                            <div className="overflow-x-auto">
+                                <table className="min-w-full divide-y divide-gray-200">
+                                    <thead className="bg-gray-50">
+                                        <tr>
+                                            {columns.map((col, index) => (
+                                                <th
+                                                    key={index}
+                                                    onClick={() => handleSort(col)}
+                                                    className="group px-6 py-4 text-left text-xs font-bold text-gray-500 uppercase tracking-wider cursor-pointer hover:bg-gray-100 select-none whitespace-nowrap"
+                                                >
+                                                    <div className="flex items-center space-x-2">
+                                                        <span>{col}</span>
+                                                        <span className="text-gray-400 group-hover:text-gray-700">
+                                                            {sortConfig.key === col ? (
+                                                                sortConfig.direction === 'asc' ? <i className="fa-solid fa-chevron-up"></i> : <i className="fa-solid fa-chevron-down"></i>
+                                                            ) : (
+                                                                <i className="fa-solid fa-chevron-down opacity-0 group-hover:opacity-100"></i>
+                                                            )}
+                                                        </span>
+                                                    </div>
+                                                </th>
+                                            ))}
+                                        </tr>
+                                    </thead>
+                                    <tbody className="bg-white divide-y divide-gray-200">
+                                        {sortedAndFilteredData.length > 0 ? (
+                                            sortedAndFilteredData.map((row, rowIndex) => (
+                                                <tr key={rowIndex} className="hover:bg-indigo-50/50 transition-colors">
+                                                    {columns.map((col, colIndex) => {
+                                                        const cellValue = row[col] || '';
+                                                        const isPrimary = colIndex === 0;
+                                                        return (
+                                                            <td 
+                                                                key={colIndex} 
+                                                                className={`px-6 py-4 whitespace-nowrap text-sm ${isPrimary ? 'font-medium text-indigo-900' : 'text-gray-700'}`}
+                                                            >
+                                                                {cellValue}
+                                                            </td>
+                                                        );
+                                                    })}
+                                                </tr>
+                                            ))
+                                        ) : (
+                                            <tr>
+                                                <td colSpan={columns.length} className="px-6 py-10 text-center text-gray-500">
+                                                    No records found matching your criteria.
+                                                </td>
+                                            </tr>
+                                        )}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </main>
+
+                    {/* Admin Settings Modal */}
+                    {showSettings && (
+                        <div className="fixed inset-0 z-50 overflow-y-auto">
+                            <div className="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+                                <div className="fixed inset-0 transition-opacity bg-gray-900/75 backdrop-blur-sm" onClick={() => setShowSettings(false)}></div>
+
+                                <span className="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
+                                <div className="inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-xl shadow-xl sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6">
+                                    
+                                    <div className="flex justify-between items-center mb-5">
+                                        <h3 className="text-lg font-bold text-gray-900 flex items-center gap-2">
+                                            <i className="fa-solid fa-gear text-indigo-600"></i>
+                                            Connect Google Sheets
+                                        </h3>
+                                        <button onClick={() => setShowSettings(false)} className="text-gray-400 hover:text-gray-500 text-2xl leading-none">&times;</button>
+                                    </div>
+
+                                    <div className="bg-blue-50 text-blue-800 p-4 rounded-lg mb-6 text-sm border border-blue-100 flex gap-3">
+                                        <i className="fa-solid fa-circle-info mt-1 text-lg"></i>
+                                        <div>
+                                            <p className="font-semibold mb-1">How to make your Sheet "Live"</p>
+                                            <ol className="list-decimal pl-4 space-y-1 mt-2 text-blue-900/80">
+                                                <li>Open your Google Sheet</li>
+                                                <li>Click <strong>File</strong> &gt; <strong>Share</strong> &gt; <strong>Publish to web</strong></li>
+                                                <li>Change "Web page" dropdown to <strong>Comma-separated values (.csv)</strong></li>
+                                                <li>Click <strong>Publish</strong> and copy the generated link.</li>
+                                                <li>Paste the link below!</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+
+                                    <form onSubmit={handleSaveSettings}>
+                                        <div className="mb-4">
+                                            <label className="block text-sm font-medium text-gray-700 mb-2">
+                                                Published CSV URL
+                                            </label>
+                                            <input
+                                                type="url"
+                                                value={sheetUrl}
+                                                onChange={(e) => setSheetUrl(e.target.value)}
+                                                placeholder="https://docs.google.com/spreadsheets/d/e/.../pub?output=csv"
+                                                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500 text-sm outline-none"
+                                            />
+                                        </div>
+                                        
+                                        <div className="mt-6 flex justify-end space-x-3">
+                                            <button
+                                                type="button"
+                                                onClick={() => {
+                                                    setSheetUrl('');
+                                                    localStorage.removeItem('googleSheetUrl');
+                                                    fetchData('');
+                                                    setShowSettings(false);
+                                                }}
+                                                className="px-4 py-2 text-sm font-medium text-red-600 bg-red-50 hover:bg-red-100 rounded-md transition-colors"
+                                            >
+                                                Reset to Default
+                                            </button>
+                                            <button
+                                                type="button"
+                                                onClick={() => setShowSettings(false)}
+                                                className="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors"
+                                            >
+                                                Cancel
+                                            </button>
+                                            <button
+                                                type="submit"
+                                                className="px-4 py-2 text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 rounded-md transition-colors shadow-sm"
+                                            >
+                                                Connect Sheet
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+                </div>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>
